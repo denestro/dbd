@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 a {
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+h1 a:hover {
+  color: red;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+} 
+header {
+  height: 100px;
+  background: black;
+}
+
+.inner_header {
+  height: 100px;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.modal_content input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  background: #111;
+  border: 1px solid #555;
+  color: white;
+  font-size: 18px;
+}
+
+.modal_content input:focus {
+  outline: none;
+  border-color: red;
+  box-shadow: 0 0 10px red;
+}
+
+.modal_content form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  background: #c00000;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal_content form button:hover {
+  background: red;
+  box-shadow: 0 0 20px red;
+}
+
+.close_btn {
+  margin-top: 20px;
+  background: #222;
+  color: white;
+  padding: 10px 30px;
+  border: 1px solid #555;
+}/*# sourceMappingURL=core.css.map */

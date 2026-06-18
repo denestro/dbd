@@ -1,0 +1,12 @@
+[
+    { "name": "Dwight Fairfield", "image": "../img/dwait.png", "description": "Team leader who boosts cooperation." },
+    { "name": "Meg Thomas", "image": "../img/meg.png", "description": "Fast runner with great mobility." },
+    { "name": "Claudette Morel", "image": "../img/clode.png", "description": "Specialist in healing and survival." },
+    { "name": "Jake Park", "image": "../img/jake.png", "description": "Can sabotage hooks and avoid killers." },
+    { "name": "Nea Karlsson", "image": "../img/chain.png", "description": "Agile survivor focused on stealth." },
+    { "name": "Laurie Strode", "image": "../img/chain.png", "description": "Strong anti-killer perks." },
+    { "name": "Ace Visconti", "image": "../img/chain.png", "description": "Lucky gambler with item bonuses." },
+    { "name": "Feng Min", "image": "../img/chain.png", "description": "Fast learner with tech skills." },
+    { "name": "Kate Denson", "image": "../img/chain.png", "description": "Supportive survivor with team perks." },
+    { "name": "Adam Francis", "image": "../img/chain.png", "description": "Balanced survivor with smart perks." }
+  ]

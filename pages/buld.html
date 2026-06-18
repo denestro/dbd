@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUILD</title>
+    <link rel="stylesheet" href="../style/build.css">
+    <link rel="stylesheet" href="../style/core.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="container">
+                <div class="inner_header">
+                    <a href="">
+                        <div class="logo">
+                            <img class="dbd" src="../img/icon.png" alt="">
+                        </div>
+                    </a>
+                    <ul class="menu">
+                        <li class="menu_link">
+                            <a href="../index.html">HOME</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="../pages/gameplay.html">GAMEPLAY</a>
+                        </li>
+                        <li class="menu_link active">
+                            <a href="../pages/buld.html">BUILD</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="../pages/characters.html">CHARACTERS</a>
+                        </li>
+                    </ul>
+                    <button class="btn">KILL</button>
+                </div>
+            </div>
+        </header>
+        <main class="build">
+
+            <section class="build_title">
+                <h1>BUILD CREATOR</h1>
+                <p>Pick perks and create your loadout</p>
+            </section>
+
+            <div class="perk_info" id="perkInfo">
+                <h3>Select a perk</h3>
+                <p>Click on a perk to see details</p>
+            </div>
+        
+        
+            <section class="build_container">
+        
+        
+                <!-- SURVIVOR -->
+                <div class="build_box survivor">
+        
+                    <h2>SURVIVOR BUILD</h2>
+        
+                    <div class="slots">
+        
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+        
+                    </div>
+        
+                </div>
+        
+        
+        
+                <!-- KILLER -->
+                <div class="build_box killer">
+        
+                    <h2>KILLER BUILD</h2>
+        
+                    <div class="slots">
+        
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+        
+                    </div>
+        
+                </div>
+        
+            </section>
+        
+        
+        
+            <!-- PERKS LIST -->
+            <section class="perks">
+        
+                <h2>AVAILABLE PERKS</h2>
+        
+                <div class="perks_grid">
+        
+                    <div class="perk" draggable="true" data-type="survivor" data-name="Dead Hard" data-desc="Allows a burst of speed to avoid damage">
+                        Dead Hard
+                    </div>
+                    <div class="perk" draggable="true" data-type="survivor" data-name="Dead Hard" data-desc="Allows a burst of speed to avoid damage">
+                        Dead Hard
+                    </div>
+                    <div class="perk" draggable="true" data-type="survivor" data-name="Dead Hard" data-desc="Allows a burst of speed to avoid damage">
+                        Dead Hard
+                    </div>
+                    <div class="perk" draggable="true" data-type="survivor" data-name="Dead Hard" data-desc="Allows a burst of speed to avoid damage">
+                        Dead Hard
+                    </div>
+                    <div class="perk" draggable="true" data-type="killer" data-name="Noed" data-desc="Gives speed and power when exit gates are powered">
+                        NOED
+                    </div>
+                    <div class="perk" draggable="true" data-type="killer" data-name="Noed" data-desc="Gives speed and power when exit gates are powered">
+                        NOED
+                    </div>
+                    <div class="perk" draggable="true" data-type="killer" data-name="Noed" data-desc="Gives speed and power when exit gates are powered">
+                        NOED
+                    </div>
+                    <div class="perk" draggable="true" data-type="killer" data-name="Noed" data-desc="Gives speed and power when exit gates are powered">
+                        NOED
+                    </div>
+                </div>
+
+                <div class="converter">
+                    <div class="container">
+                
+                        <h3>ECONOMY SYSTEM</h3>
+                
+                        <div class="inner_converter">
+                
+                            <div class="som">
+                                <label for="som">Som</label>
+                                <input type="number" id="som">
+                            </div>
+                
+                            <div class="usd">
+                                <label for="usd">USD</label>
+                                <input type="number" id="usd">
+                            </div>
+                
+                            <div class="cells">
+                                <label for="cells">Blood Cells</label>
+                                <input type="number" id="cells">
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </div>
+        
+            </section>
+        
+        </main>
+        <footer>
+            <div class="container"></div>
+        </footer>
+</body>
+<div class="modal" id="modal">
+
+    <div class="modal_content">
+
+        <h2>ENTER THE FOG</h2>
+
+        <p>
+            Leave your information to start the trial
+        </p>
+
+
+        <form id="killForm">
+
+            <input 
+            type="text" 
+            id="nickname"
+            placeholder="Nickname">
+
+
+            <input 
+            type="email" 
+            id="email"
+            placeholder="Email">
+
+
+            <input 
+            type="tel" 
+            id="phone"
+            placeholder="Phone number">
+
+
+            <button type="submit">
+                START
+            </button>
+
+
+        </form>
+
+
+        <button class="close_btn" id="closeModal">
+            CLOSE
+        </button>
+
+
+    </div>
+
+</div>
+<script src="../javascript/build.js"></script>
+<script src="../javascript/modal.js"></script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARACTERS</title>
+    <link rel="stylesheet" href="../style/characters.css">
+    <link rel="stylesheet" href="../style/core.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="inner_header">
+                <a href="">
+                    <div class="logo">
+                        <img class="dbd" src="../img/icon.png" alt="">
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="../pages/gameplay.html">GAMEPLAY</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="../pages/buld.html">BUILD</a>
+                    </li>
+                    <li class="menu_link active">
+                        <a href="../pages/characters.html">CHARACTERS</a>
+                    </li>
+                </ul>
+                <button class="btn">KILL</button>
+            </div>
+        </div>
+    </header>
+    <main class="characters">
+
+        <section class="characters_hero">
+            <h1>CHARACTERS</h1>
+        </section>
+    
+        <section class="characters_filter">
+            <button class="filter" id="allBtn">ALL</button>
+            <button class="filter" id="survivorsBtn">SURVIVORS</button>
+            <button class="filter" id="killersBtn">KILLERS</button>
+        </section>
+    
+        <section class="characters_grid" id="grid"></section>
+    
+    </main>
+    <footer>
+        <div class="container"></div>
+    </footer>
+</body>
+<div class="modal" id="modal">
+
+    <div class="modal_content">
+
+        <h2>ENTER THE FOG</h2>
+
+        <p>
+            Leave your information to start the trial
+        </p>
+
+
+        <form id="killForm">
+
+            <input 
+            type="text" 
+            id="nickname"
+            placeholder="Nickname">
+
+
+            <input 
+            type="email" 
+            id="email"
+            placeholder="Email">
+
+
+            <input 
+            type="tel" 
+            id="phone"
+            placeholder="Phone number">
+
+
+            <button type="submit">
+                START
+            </button>
+
+
+        </form>
+
+
+        <button class="close_btn" id="closeModal">
+            CLOSE
+        </button>
+
+
+    </div>
+
+</div>
+<script src="../javascript/characters.js"></script>
+</html>

@@ -1,0 +1,12 @@
+[
+    { "name": "The Trapper", "image": "../img/man.png", "description": "Places bear traps to catch survivors." },
+    { "name": "The Wraith", "image": "../img/wraith.png", "description": "Can become invisible to ambush." },
+    { "name": "The Hillbilly", "image": "../img/hilly.png", "description": "Uses chainsaw for fast map pressure." },
+    { "name": "The Nurse", "image": "../img/nurse.png", "description": "Teleports through obstacles." },
+    { "name": "The Huntress", "image": "../img/hunt.png", "description": "Throws hatchets from range." },
+    { "name": "The Shape", "image": "../img/shape.png", "description": "Slow but extremely deadly stalker." },
+    { "name": "The Hag", "image": "../img/hag.png", "description": "Creates teleport traps." },
+    { "name": "The Doctor", "image": "../img/doctor.png", "description": "Disrupts survivors' sanity." },
+    { "name": "The Legion", "image": "../img/legion.png", "description": "Fast group attacker." },
+    { "name": "The Spirit", "image": "../img/spirit.png", "description": "Moves through spirit form." }
+  ]

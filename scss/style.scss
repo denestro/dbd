@@ -1,0 +1,698 @@
+header {
+    background: black;
+    display: flex;
+  }
+  
+  .inner_header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    align-items: center;
+  
+  }
+  .menu a {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    font-size: 30px;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: #e01313;
+  }
+  
+  .dbd {
+    max-width: 100px;
+    max-height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }/*# sourceMappingURL=style.css.map */
+  
+  .inner_main {
+    position: relative;        /* родитель для абсолютного позиционирования */
+    width: 100%;
+    height: 100vh;             /* на всю высоту экрана */
+    overflow: hidden;
+  }
+  
+  .video_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;                /* на самом заднем плане */
+  }
+  
+  .video_background video {
+    width: 100%;
+    height: 180%;
+    object-fit: cover;         /* заполняет блок без искажений */
+  }
+  
+  .main_content {
+    position: absolute;        /* поверх видео */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;                /* выше видео */
+    text-align: center;
+  }
+  
+  .main_content img {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .main_content h1 a {
+    text-decoration: none;
+    font-size: 5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  .block_info {
+    color:white;
+    font-size: 50px;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+  }
+
+
+.block_info_game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-image: url(../img/forest.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent 30%),
+                    linear-gradient(to top, rgb(0, 0, 0), transparent 30%),
+                    url("../img/forest.png");
+        
+
+    p {
+        width: 900px;
+        padding: 15px;
+        line-height: 3.2rem;
+        text-align: center;
+        font-size: 35px;
+        color:white;
+        font-weight: bold;
+    }
+
+    h3 {
+        color:rgb(190, 32, 32);
+        font-size: 60px;
+
+    }
+}
+
+  
+  /* slider */
+  
+  .slider_block {
+      padding: 100px 0;
+      background: black;
+  }
+  
+  .slider {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border: 3px solid var(--orange);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+  }
+  
+  .slide {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide_card {
+      color: white;
+      margin: 0 auto;
+      width: 500px;
+      text-align: center;
+  }
+  
+  .slide_card h3 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 22px;
+  }
+  
+  .slide_card p {
+      font-size: 16px;
+      text-align: justify;
+      margin: 10px 0;
+  }
+  
+  .slide_card a {
+      color: var(--orange);
+      text-decoration: underline;
+  }
+  
+  .slide.active_slide {
+      display: block;
+  }
+
+  /* ================= SLIDER ================= */
+
+.slider_block {
+  padding: 100px 0;
+  background: #050505;
+}
+
+.inner_slider {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+
+  background:
+  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.95)),
+  url("../img/forest.png");
+
+  background-size: cover;
+  background-position: center;
+
+  border: 2px solid #8b0000;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow:
+  0 0 25px rgba(150,0,0,.4),
+  inset 0 0 40px black;
+
+  padding: 0 40px;
+}
+
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  align-items:center;
+  justify-content:center;
+
+  animation: fade .5s;
+}
+
+
+.slide.active_slide {
+  display:flex;
+}
+
+
+@keyframes fade {
+  from {
+      opacity:0;
+  }
+
+  to {
+      opacity:1;
+  }
+}
+
+
+
+.slide_card {
+
+  width:600px;
+
+  text-align:center;
+
+  color:white;
+
+}
+
+
+.slide_card h3 {
+
+  font-size:45px;
+
+  color:#c00000;
+
+  text-transform:uppercase;
+
+  letter-spacing:3px;
+
+  text-shadow:
+  0 0 10px black,
+  0 0 20px red;
+
+}
+
+
+.slide_card p {
+
+  font-size:22px;
+
+  color:#ddd;
+
+  line-height:1.5;
+
+}
+
+
+.slide_card a {
+
+  display:inline-block;
+
+  margin-top:25px;
+
+  padding:15px 35px;
+
+
+  background:#a00000;
+
+  color:white;
+
+  font-weight:bold;
+
+  text-decoration:none;
+
+  border-radius:5px;
+
+
+  transition:.3s;
+
+}
+
+
+.slide_card a:hover {
+
+  background:#ff0000;
+
+  transform:scale(1.05);
+
+}
+
+
+/* кнопки */
+
+.btn-slide {
+
+  z-index:5;
+
+  width:100px;
+
+  height:50px;
+
+
+  background:#120000;
+
+  color:white;
+
+  border:1px solid #b00000;
+
+
+  font-size:20px;
+
+  cursor:pointer;
+
+
+  transition:.3s;
+
+}
+
+
+.btn-slide:hover {
+
+  background:#b00000;
+
+  box-shadow:0 0 15px red;
+
+}
+
+.slide {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: .5s ease;
+}
+
+.slide.active_slide {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer {
+
+  height:250px;
+
+  background:
+
+  linear-gradient(to top, black, transparent),
+  url("../img/forest.png");
+
+
+  background-size:cover;
+
+  background-position:center;
+
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+
+  border-top:3px solid #700000;
+
+}
+
+
+
+footer .container::after {
+
+  content:"DEAD BY DAYLIGHT";
+
+  color:white;
+
+  font-size:40px;
+
+  font-weight:bold;
+
+  letter-spacing:5px;
+
+
+  text-shadow:
+
+  0 0 10px red;
+
+}
+
+
+footer::before {
+
+  content:"© Behaviour Interactive";
+
+  position:absolute;
+
+  margin-top:150px;
+
+  color:#777;
+
+  font-size:18px;
+
+}
+
+/* ================= TRAILER VIDEO ================= */
+
+.block_video {
+
+  background:#050505;
+
+  padding:100px 0;
+
+
+  border-top:2px solid #700000;
+
+}
+
+
+.block_video h3 {
+
+  text-align:center;
+
+  color:#c00000;
+
+  font-size:55px;
+
+  text-transform:uppercase;
+
+  letter-spacing:4px;
+
+
+  margin-bottom:50px;
+
+
+  text-shadow:
+  0 0 10px black,
+  0 0 20px red;
+
+}
+
+
+
+.inner_block_video {
+
+
+  width:900px;
+
+  height:500px;
+
+
+  margin:0 auto;
+
+
+  background:black;
+
+
+  border:3px solid #8b0000;
+
+
+  border-radius:15px;
+
+
+  overflow:hidden;
+
+
+  box-shadow:
+
+  0 0 30px rgba(150,0,0,.5),
+
+  inset 0 0 30px black;
+
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+
+
+.inner_block_video iframe,
+.inner_block_video video {
+
+
+  width:100%;
+
+  height:100%;
+
+
+  object-fit:cover;
+
+}
+
+
+
+
+.inner_block_video:hover {
+
+
+  box-shadow:
+
+  0 0 40px rgba(255,0,0,.7);
+
+  transition:.4s;
+
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,.8);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal_content {
+  width: 500px;
+  padding: 40px;
+
+  background: #0b0b0b;
+  border: 2px solid #c00000;
+
+  text-align: center;
+
+  box-shadow: 0 0 30px red;
+}
+
+.modal_content h2 {
+  color: #c00000;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.modal_content p {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.modal_content button {
+  margin-top: 20px;
+  padding: 10px 25px;
+
+  background: #c00000;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.modal_content button:hover {
+  background: red;
+  transform: scale(1.05);
+}
+
+.menu_link {
+  position: relative;
+}
+
+
+.menu_link a {
+  color:white;
+  text-decoration:none;
+}
+
+
+/* красная линия снизу */
+
+.menu_link.active::after {
+
+  content:"";
+
+  position:absolute;
+
+  bottom:-10px;
+  left:0;
+
+  width:100%;
+  height:4px;
+
+  background:#e01313;
+
+  box-shadow:0 0 10px red;
+}
+
+.menu_link::after {
+
+  content:"";
+
+  position:absolute;
+
+  bottom:-10px;
+  left:0;
+
+  width:0%;
+  height:4px;
+
+  background:red;
+
+  transition:.3s;
+}
+
+
+.menu_link:hover::after {
+
+  width:100%;
+
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,.8);
+
+  z-index: 9999;
+}
+
+.modal.active {
+  display: flex;
+}
+
